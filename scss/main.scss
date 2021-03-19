@@ -1,0 +1,297 @@
+
+
+@import 'reset', 'variables';
+
+@import 'header', 'footer';
+
+
+.hero {
+  height: calc(100vh - 119px);
+  background: url('../media/img1.jpg') no-repeat top/cover;
+  text-align: center;
+  display: grid;
+    place-content: center;
+
+  a {
+    padding: 3em 1.5em;
+    display: block;
+    
+
+    h2 {
+      background-color: rgba(255, 255, 255, 0.603);
+      padding: 2em 1em;
+
+      &::after {
+        display: block;
+        content: "Ver más";
+        background: $detailColor;
+        padding: .75em 1.5em;
+        width: 200px;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@mixin btn {
+  background-color: $itemColor;
+  border: none;
+  margin: auto;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 8px;
+  opacity: 1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.home-button{
+  @include btn();  
+}
+
+.home-button:hover{
+  background: $detailColor;
+  transition: 0.15s;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+
+/* Articles */
+.articles {
+	margin-top: 2em;
+	display: flex;
+		flex-direction: column;
+   
+
+  .article {
+    margin-bottom: 3em;
+    border-bottom: 1px solid $menuColor;
+
+  
+    .article__info {
+      text-align:justify;
+      padding-top: 0.5em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  
+    .article__title {
+      line-height: 1.4em;
+    }
+
+    .article__text {
+      line-height: 1.7em;
+      padding-top:1em;
+      padding-bottom: 1em;
+    }
+
+    
+    .article__image {
+      max-width: 100%;
+      padding-bottom: 0.5em;
+      padding-top: 1em;
+    }
+  }
+}
+
+
+
+/* Brands */  
+.brands {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(auto-fill,minmax(200px,1fr));	
+	padding-top: 2em;
+  
+
+  
+  h3{
+    font-size: 1.3em;
+  }
+
+
+  .brands__img {	
+    width: 100%;
+    margin: auto;
+    padding: 3em 1em;
+    display: block;
+    
+  }
+
+  .brands__card {
+    display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    background-color: $itemColor;
+    padding: 1rem;
+    height: 200px;
+    width: 100%;
+      max-width: 250px;
+    border: 2px solid $detailColor;
+    margin: auto;
+  }
+  
+}
+
+.max-width {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+}
+  
+
+/* Contact */  
+input[type=text], input[type=email], input[type=checkbox], select {
+	padding: 0.5em;
+	margin: 1em;
+	box-sizing: border-box;
+}
+
+fieldset{
+   display: block;
+	width: 50%;
+	padding: 3em;
+	margin: auto;
+	background-color: $itemColor;
+	margin-top: 3em;
+}
+
+textarea {
+	resize: none;	
+}
+
+/* About Us */
+  .about__text {	
+	line-height: 2em;
+	margin-top: 3em;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+  
+	
+	.row:nth-of-type(2){
+		background: $bgcolor;
+	}
+
+	.row:nth-of-type(1){
+		background: $menuColor;
+	}
+
+	.article__title--big {
+		text-align: center;
+	}
+
+	.subtitle {
+		text-align: center;
+		padding-top:20px;
+    padding-bottom: 20px;
+	}
+
+	.articles {
+		display: block;
+		margin-top: 20px;
+	}
+
+	.article {
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: row-reverse;
+		padding-bottom: 30px;
+		border-bottom: 2px solid $menuColor;
+
+    img {
+      width: 800px;;
+    }
+
+    .article__info {		
+      padding-right: 20px;		
+      margin: auto;
+      max-width: 500px;		
+    }
+
+    .article__title {
+      font-size: 1.8em;
+      padding-top: 2em;	
+    }
+  
+    .article__text {
+      font-size: 1.1em
+    }
+	}
+
+  
+}
+
+
+
+
+/*Form */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/*Submit button */
+input[type=submit] {
+  background-color: $detailColor;
+  color: $bgcolor;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 2em 2em;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.container__row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

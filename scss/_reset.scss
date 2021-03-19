@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  
+    @media only screen and (min-width: 768px) {
+      padding: 0 5em;
+    }
+  }
+  
+  h1 {
+    font-family: 'Noto', serif;
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+	  text-decoration-color: #e1ad7f;
+  }
+  
+  p,
+  li,
+  a {
+    font-size: 1rem;
+  }

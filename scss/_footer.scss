@@ -1,0 +1,25 @@
+footer {
+    border-top: 2px solid $itemColor;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+  
+    .sm {
+      margin-bottom: 1em;
+  
+      div {
+        margin-top: .5em;
+  
+        a {
+          font-size: 1.7em;
+          margin: 0 .25em;
+        }
+      }
+    }
+  
+    
+  }
+  
