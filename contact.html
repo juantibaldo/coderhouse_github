@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,114 +16,114 @@
 
 
 <body>
-    <header>
-        <div class="row time">
-          <a href="https://time.is/Argentina"><span id="currentDate"></span></a>
-    
-          <a class="logo logo-lg" href="index.html">
-            <h1>TEMPO</h1>
-          </a>
-    
-          <div class="credentials">
-            <a class="credentials__register" href="login.html">Registrate</a>
-            <a class="credentials__login" href="signin.html">Ingresar</a>
+  <header>
+    <div class="row time">
+      <a href="https://time.is/Argentina"><span id="currentDate"></span></a>
+
+      <a class="logo logo-lg" href="index.html">
+        <h1>TEMPO</h1>
+      </a>
+
+      <div class="credentials">
+        <a class="credentials__register" href="login.html">Registrate</a>
+        <a class="credentials__login" href="signin.html">Ingresar</a>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <a href="#menu" class="toggle lg-none">
+        <span class="iconify" data-icon="feather:menu" data-inline="false"></span>
+      </a>
+
+
+      <a class="logo logo-sm lg-none" href="index.html">
+        <h1>TEMPO</h1>
+      </a>
+
+      <div class="menu menu-lg " id="menu">
+        <a href="#" class="toggle lg-none">
+          <span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span>
+        </a>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="articles.html">Artículos</a></li>
+          <li><a href="brands.html">Marcas</a></li>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+
+        <div class="menu__sm lg-none">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+          <a href="https://ar.pinterest.com/" class="fa fa-pinterest"></a>
+        </div>
+      </div>
+
+      <a href="brands.html" class="menu-sm lg-none">Marcas</a>
+    </div>
+  </header>
+
+
+
+  <main>
+    <div class="subtitle">
+      <h2>Para consultas y/o comentarios envianos un mensaje:</h2>
+    </div>
+
+    <div class="container">
+      <form action="action_page.php">
+        <div class="container__row">
+          <div class="col-25">
+            <label for="fname">Nombre</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Ingrese su nombre completo" required>
           </div>
         </div>
-    
-        <div class="row">
-    
-          <a href="#menu" class="toggle lg-none">
-            <span class="iconify" data-icon="feather:menu" data-inline="false"></span>
-          </a>
-    
-    
-          <a class="logo logo-sm lg-none" href="index.html">
-            <h1>TEMPO</h1>
-          </a>
-    
-          <div class="menu menu-lg " id="menu">
-            <a href="#" class="toggle lg-none">
-              <span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span>
-            </a>
-    
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="articles.html">Artículos</a></li>
-              <li><a href="brands.html">Marcas</a></li>
-              <li><a href="about.html">Sobre Nosotros</a></li>
-              <li><a href="contact.html">Contacto</a></li>
-            </ul>
-    
-            <div class="menu__sm lg-none">
-              <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-              <a href="https://twitter.com/" class="fa fa-twitter"></a>
-              <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-              <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-              <a href="https://ar.pinterest.com/" class="fa fa-pinterest"></a>
-            </div>
+        <div class="container__row ">
+          <div class="col-25">
+            <label for="email">E-Mail</label>
           </div>
-    
-          <a href="brands.html" class="menu-sm lg-none">Marcas</a>
+          <div class="col-75">
+            <input type="email" id="email" name="email" placeholder="Ingrese su e-mail" required>
+          </div>
         </div>
-      </header>
+        <div class="container__row">
+          <div class="col-25">
+            <label for="age">Edad</label>
+          </div>
+          <div class="col-75">
+            <select id="age" name="age">
+              <option value="null" disabled selected>Seleccione su edad</option>
+              <option value="age2">20-30</option>
+              <option value="age3">30-40</option>
+              <option value="age4">40-50</option>
+              <option value="age5">50-60</option>
+              <option value="age6">60+</option>
+            </select>
+          </div>
+        </div>
+        <div class="container__row">
+          <div class="col-25">
+            <label for="subject">Comentario</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Dejanos tu comentario!" style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="container__row">
+          <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" checked>
+          <label for="newsletter">Deseo recibir el Newsletter semanal</label>
 
 
-
-    <main>
-        <div class="subtitle">
-            <h2>Para consultas y/o comentarios envianos un mensaje:</h2>
+          <input type="submit" value="Enviar formulario">
         </div>
-        
-        <div class="container">
-          <form action="action_page.php">
-            <div class="container__row">
-              <div class="col-25">
-                <label for="fname">Nombre</label>
-              </div>
-              <div class="col-75">
-                <input type="text" id="fname" name="firstname" placeholder="Ingrese su nombre completo" required>
-              </div>
-            </div>
-            <div class="container__row ">
-              <div class="col-25">
-                <label for="email">E-Mail</label>
-              </div>
-              <div class="col-75">
-                <input type="email" id="email" name="email" placeholder="Ingrese su e-mail" required>
-              </div>
-            </div>
-            <div class="container__row">
-              <div class="col-25">
-                <label for="age">Edad</label>
-              </div>
-              <div class="col-75">
-                <select id="age" name="age" >                  
-                  <option value="null" disabled selected>Seleccione su edad</option>
-                  <option value="age2">20-30</option>
-                  <option value="age3">30-40</option>
-                  <option value="age4">40-50</option>
-                  <option value="age5">50-60</option>
-                  <option value="age6">60+</option> 
-                </select>
-              </div>
-            </div>
-            <div class="container__row">
-              <div class="col-25">
-                <label for="subject">Comentario</label>
-              </div>
-              <div class="col-75">
-                <textarea id="subject" name="subject" placeholder="Dejanos tu comentario!" style="height:200px"></textarea>
-              </div>
-            </div>
-            <div class="container__row">
-              <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" checked> 
-              <label for="newsletter">Deseo recibir el Newsletter semanal</label>
-         
-            
-              <input type="submit" value="Enviar formulario">
-            </div>
-          </form>
-        </div>
+      </form>
+    </div>
 
 
 
@@ -139,7 +140,8 @@
       </div>
       <p class="copy">© Copyright 2021</p>
     </footer>
-  
-    <script src="javascript.js"></script>    
+
+    <script src="javascript.js"></script>
 </body>
+
 </html>
