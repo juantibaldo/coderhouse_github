@@ -118,12 +118,12 @@
     margin: auto;
     padding: 3em 1em;
     display: block;
-
   }
 
   .brands__card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     background-color: $itemColor;
     padding: 1rem;
@@ -141,6 +141,7 @@
   max-width: 800px;
   margin: 0 auto;
 }
+
 
 
 /* Contact */
@@ -166,13 +167,13 @@ textarea {
   resize: none;
 }
 
+
+
 /* About Us */
 .about__text {
   line-height: 2em;
   margin-top: 3em;
 }
-
-
 
 
 
@@ -236,11 +237,11 @@ textarea {
 
 
 
-
 /*Form */
 input[type=text],
 select,
 textarea {
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -254,6 +255,8 @@ label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
+
+
 
 /*Submit button */
 input[type=submit] {
@@ -302,3 +305,4 @@ input[type=submit] {
     margin-top: 0;
   }
 }
+

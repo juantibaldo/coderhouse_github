@@ -25,7 +25,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   body {
-    padding: 0 5em;
+    padding: 0 10em;
   }
 }
 
@@ -59,7 +59,7 @@ header {
   -webkit-box-direction: reverse;
       -ms-flex-flow: column-reverse;
           flex-flow: column-reverse;
-  padding: .5em 1em;
+  padding: .5em 0em;
   position: relative;
 }
 
@@ -391,6 +391,9 @@ footer .sm div a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -410,7 +413,10 @@ footer .sm div a {
 }
 
 /* Contact */
-input[type=text], input[type=email], input[type=checkbox], select {
+input[type=text],
+input[type=email],
+input[type=checkbox],
+select {
   padding: 0.5em;
   margin: 1em;
   -webkit-box-sizing: border-box;
@@ -485,7 +491,10 @@ textarea {
 }
 
 /*Form */
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -537,7 +546,9 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
