@@ -32,6 +32,8 @@
   }
 }
 
+
+
 @mixin btn {
   background-color: $itemColor;
   border: none;
@@ -68,8 +70,9 @@
 
 
   .article {
-    margin-bottom: 3em;
-    border-bottom: 1px solid $menuColor;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 5px solid $menuColor;
 
 
     .article__info {
@@ -145,14 +148,15 @@
 
 
 
-/* Contact */
 
 
 
 /* About Us */
 .about__text {
-  line-height: 2em;
-  margin-top: 3em;
+line-height: 2em;
+margin-top: 3em;
+padding: 1em;
+
 }
 
 
