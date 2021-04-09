@@ -31,21 +31,16 @@
     </div>
 
     <div class="row">
-
       <a href="#menu" class="toggle lg-none">
         <span class="iconify" data-icon="feather:menu" data-inline="false"></span>
       </a>
-
-
       <a class="logo logo-sm lg-none" href="index.html">
         <h1>TEMPO</h1>
       </a>
-
       <div class="menu menu-lg " id="menu">
         <a href="#" class="toggle lg-none">
           <span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span>
         </a>
-
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="articles.html">Artículos</a></li>
@@ -53,7 +48,6 @@
           <li><a href="about.html">Sobre Nosotros</a></li>
           <li><a href="contact.html">Contacto</a></li>
         </ul>
-
         <div class="menu__sm lg-none">
           <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
           <a href="https://twitter.com/" class="fa fa-twitter"></a>
@@ -62,7 +56,6 @@
           <a href="https://ar.pinterest.com/" class="fa fa-pinterest"></a>
         </div>
       </div>
-
       <a href="brands.html" class="menu-sm lg-none">Marcas</a>
     </div>
   </header>
@@ -73,73 +66,44 @@
     <div class="subtitle">
       <h2>Para consultas y/o comentarios envianos un mensaje:</h2>
     </div>
-
-    <div class="container">
-      <form action="action_page.php">
-        <div class="container__row">
-          <div class="col-25">
-            <label for="fname">Nombre</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="Ingrese su nombre completo" required>
-          </div>
-        </div>
-        <div class="container__row">
-          <div class="col-25">
-            <label for="email">E-Mail</label>
-          </div>
-          <div class="col-75">
-            <input type="email" id="email" name="email" placeholder="Ingrese su e-mail" required>
-          </div>
-        </div>
-        <div class="container__row">
-          <div class="col-25">
-            <label for="age">Edad</label>
-          </div>
-          <div class="col-75">
-            <select id="age" name="age">
-              <option value="null" disabled selected>Seleccione su edad</option>
+    <div class="form">
+      <form action="action_page.php">                    
+          <input class="form__input name" type="text" id="name" name="name" placeholder="Nombre Completo" required>
+          <input class="form__input email" type="email" id="email" name="email" placeholder="E-mail" required>
+          <select class="form__age" id= age name="age">
+              <option value="null" disabled selected>Edad</option>
               <option value="age2">20-30</option>
               <option value="age3">30-40</option>
               <option value="age4">40-50</option>
               <option value="age5">50-60</option>
               <option value="age6">60+</option>
             </select>
+          <textarea class="form__textarea" id="subject" name="subject" placeholder="Dejanos tu comentario!" style="height:200px"></textarea>
+          <div class="form__newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" checked>
+            <label for="newsletter">Deseo recibir el Newsletter semanal</label>
           </div>
-        </div>
-        <div class="container__row">
-          <div class="col-25">
-            <label for="subject">Comentario</label>
-          </div>
-          <div class="col-75">
-            <textarea id="subject" name="subject" placeholder="Dejanos tu comentario!" style="height:200px"></textarea>
-          </div>
-        </div>
-        <div class="container__row">
-          <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" checked>
-          <label for="newsletter">Deseo recibir el Newsletter semanal</label>
-
-
-          <input type="submit" value="Enviar formulario">
+          <input class="form__input form__submit" id="submit" type="submit" value="Enviar formulario">
         </div>
       </form>
     </div>
+  </main>
 
 
 
-    <footer>
-      <div class="sm">
-        <p>Seguinos en:</p>
-        <div>
-          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-          <a href="https://twitter.com/" class="fa fa-twitter"></a>
-          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-          <a href="https://ar.pinterest.com/" class="fa fa-pinterest"></a>
-        </div>
+  <footer>
+    <div class="sm">
+      <p>Seguinos en:</p>
+      <div>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://ar.pinterest.com/" class="fa fa-pinterest"></a>
       </div>
-      <p class="copy">© Copyright 2021</p>
-    </footer>
+    </div>
+    <p class="copy">© Copyright 2021</p>
+  </footer>
 
     <script src="javascript.js"></script>
 </body>

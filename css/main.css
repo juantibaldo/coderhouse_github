@@ -413,29 +413,6 @@ footer .sm div a {
 }
 
 /* Contact */
-input[type=text],
-input[type=email],
-input[type=checkbox],
-select {
-  padding: 0.5em;
-  margin: 1em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-fieldset {
-  display: block;
-  width: 50%;
-  padding: 3em;
-  margin: auto;
-  background-color: #e2e2e2;
-  margin-top: 3em;
-}
-
-textarea {
-  resize: none;
-}
-
 /* About Us */
 .about__text {
   line-height: 2em;
@@ -491,58 +468,106 @@ textarea {
 }
 
 /*Form */
-input[type=text],
-select,
-textarea {
-  font-family: 'Roboto', sans-serif;
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  resize: vertical;
+.form {
+  position: relative;
+  width: 500px;
+  margin: auto;
 }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+.form .form__input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 500px;
+  height: 50px;
+  padding: 0 15px 0 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-/*Submit button */
-input[type=submit] {
-  background-color: #e1ad7f;
-  color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
+.form .name {
+  border: solid 1px #b3aca7;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin: 2em 2em;
+.form .email {
+  border: solid 1px #b3aca7;
+  border-top: none;
 }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
+.form .form__age {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 500px;
+  height: 50px;
+  padding: 0 15px 0 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-top: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
+.form .form__input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
 }
 
-.container__row:after {
-  content: "";
-  display: table;
-  clear: both;
+.form .form__textarea {
+  width: 500px;
+  max-width: 500px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  resize: none;
+  border: solid 1px #b3aca7;
+  border-top: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.form .form__textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+.form .form__newsletter {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 500px;
+  height: 50px;
+  padding: 0px 15px 0 15px;
+  line-height: 50px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-top: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.form .form__submit {
+  width: 500px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-family: 'lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+.form .form__submit:hover {
+  color: #e2dedb;
 }
 
 @media screen and (max-width: 600px) {
