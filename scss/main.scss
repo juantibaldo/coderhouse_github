@@ -2,6 +2,9 @@
 
 @import 'header', 'footer';
 
+html, body {
+  width: auto!important; overflow-x: hidden!important
+}
 
 .hero {
   height: calc(100vh - 119px);

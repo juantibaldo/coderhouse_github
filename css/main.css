@@ -267,6 +267,11 @@ footer .sm div a {
   margin: 0 .25em;
 }
 
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
 .hero {
   height: calc(100vh - 119px);
   background: url("../media/img1.jpg") no-repeat top/cover;
