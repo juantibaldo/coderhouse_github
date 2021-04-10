@@ -577,20 +577,22 @@ html, body {
   color: #e2dedb;
 }
 
-@media screen and (max-width: 600px) {
-  .col-25,
-  .col-75,
-  input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .hero {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .form,
+  .form > form,
+  .form > form > .forminput,
+  .form > form > .formtextarea,
+  .form > form > .formnewsletter,
+  .form > form > .formage {
+    width: 100%;
+  }
+  .form > form > .form__textarea {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
