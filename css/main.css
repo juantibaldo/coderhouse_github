@@ -547,7 +547,6 @@ footer .sm div a {
 .form .form__newsletter {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  width: 500px;
   height: 50px;
   padding: 0px 15px 0 15px;
   line-height: 50px;
@@ -591,6 +590,7 @@ footer .sm div a {
   }
   .form > form > .form__textarea {
     max-width: 100%;
+    border: 1px solid red;
   }
 }
 /*# sourceMappingURL=main.css.map */
