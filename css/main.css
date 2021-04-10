@@ -298,6 +298,12 @@ footer .sm div a {
   margin: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+}
+
 .home-button {
   background-color: #e2e2e2;
   border: none;
@@ -590,7 +596,6 @@ footer .sm div a {
   }
   .form > form > .form__textarea {
     max-width: 100%;
-    border: 1px solid red;
   }
 }
 /*# sourceMappingURL=main.css.map */
