@@ -2,9 +2,9 @@
 
 @import 'header', 'footer';
 
-html, body {
+/*html, body {
   width: auto!important; overflow-x: hidden!important
-}
+}*/
 
 .hero {
   height: calc(100vh - 119px);
@@ -352,10 +352,10 @@ padding: 1em;
 
 .form,
   .form > form,
-  .form > form > .forminput,
-  .form > form > .formtextarea,
-  .form > form > .formnewsletter,
-  .form > form > .formage {
+  .form > form > .form__input,
+  .form > form > .form__textarea,
+  .form > form > .form__newsletter,
+  .form > form > .form__age {
     width: 100%;
   }
 
