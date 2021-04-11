@@ -34,10 +34,6 @@ header {
 
   .logo {
 
-    width: 100%;
-    text-align: center;
-    padding-right:32px;
-
     &-lg {
       display: none;
 
@@ -47,13 +43,19 @@ header {
 
     }
 
+
+
     &-sm {
       @media only screen and (min-width: 900px) {
         display: none;
       }
-    }
+    }    
+  }
 
-    
+  .logo-sm {
+    width: 100%;
+    text-align: center;
+    padding-right:32px;
   }
 
   .toggle {

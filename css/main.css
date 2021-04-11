@@ -102,12 +102,6 @@ header .credentials .credentials__login {
   padding-right: 1em;
 }
 
-header .logo {
-  width: 100%;
-  text-align: center;
-  padding-right: 32px;
-}
-
 header .logo-lg {
   display: none;
 }
@@ -122,6 +116,12 @@ header .logo-lg {
   header .logo-sm {
     display: none;
   }
+}
+
+header .logo-sm {
+  width: 100%;
+  text-align: center;
+  padding-right: 32px;
 }
 
 header .toggle {
