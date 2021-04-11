@@ -12,10 +12,11 @@
   text-align: center;
   display: grid;
   place-content: center;
-    
+  
+  
 
   a {
-    padding: 3em 1.5em;
+    
     display: block;
 
 
@@ -32,10 +33,6 @@
         margin: auto;
       }
     }
-  }
-
-  @media only screen and (max-width:768px) {
-    width: 100%;
   }
 }
 
@@ -308,7 +305,7 @@ padding: 1em;
   .form__newsletter {
       font-family: 'Lato', sans-serif;
       font-size: 0.875em;
-      
+      width: 500px;
       height: 50px;
       padding: 0px 15px 0 15px;
       line-height: 50px;            
