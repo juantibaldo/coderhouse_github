@@ -285,7 +285,8 @@ footer .sm div a {
 
 .hero a h2 {
   background-color: rgba(255, 255, 255, 0.603);
-  padding: 2em 1em;
+  padding-top: 0.55em;
+  padding-bottom: 0.5em;
 }
 
 .hero a h2::after {
@@ -293,7 +294,7 @@ footer .sm div a {
   content: "Ver más";
   background: #e1ad7f;
   padding: .75em 1.5em;
-  width: 200px;
+  width: 150px;
   margin: auto;
 }
 
