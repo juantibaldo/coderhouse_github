@@ -30,11 +30,11 @@ body {
 }
 
 h1 {
-  font-family: 'Noto', serif;
-  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
+  font-family: 'EB Garamond', serif;
   font-size: 2rem;
 }
 
@@ -45,12 +45,13 @@ h3 {
           text-decoration-color: #e1ad7f;
 }
 
-p,
-li,
-a {
-  font-size: 1rem;
-}
+/*color palette:
 
+dark grey: #5d5c61
+light grey: #379683
+dark blue: #557a95
+light blue: #7395ae
+sand: b1a296*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,7 +60,6 @@ header {
   -webkit-box-direction: reverse;
       -ms-flex-flow: column-reverse;
           flex-flow: column-reverse;
-  padding: .5em 0em;
   position: relative;
 }
 
@@ -86,24 +86,51 @@ header .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em 0;
+  padding: 0.5em 0;
+  margin-top: 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  header .row {
+    margin-top: 0;
+  }
+}
+
+header .row:nth-of-type(1) {
+  border-bottom: 1px solid #cfcccc;
 }
 
 header .time {
   padding-left: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1em;
 }
 
-header .credentials .credentials__register {
-  padding-right: 0.5em;
+@media only screen and (max-width: 768px) {
+  header .credentials .credentials__login {
+    padding-right: 1em;
+    padding-left: 0.3em;
+    border-left: 1px solid black;
+  }
+  header .credentials .credentials__right {
+    padding-right: 0.3em;
+  }
 }
 
-header .credentials .credentials__login {
-  padding-left: 0.5em;
-  padding-right: 1em;
+@media only screen and (min-width: 768px) {
+  header .credentials .credentials__register {
+    padding-right: 0.5em;
+  }
+  header .credentials .credentials__login {
+    padding-left: 0.5em;
+    padding-right: 1em;
+  }
 }
 
 header .logo-lg {
   display: none;
+  font-size: 1.7em;
+  letter-spacing: 0.3em;
 }
 
 @media only screen and (min-width: 900px) {
@@ -162,11 +189,15 @@ header .menu {
 }
 
 header .menu ul {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
   margin-top: -3.5em;
+  width: 80%;
+  margin: auto;
 }
 
 @media only screen and (min-width: 900px) {
@@ -435,7 +466,7 @@ footer .sm div a {
     background: #fff;
   }
   .row:nth-of-type(1) {
-    background: #f2f2f2;
+    background: #fff;
   }
   .article__title--big {
     text-align: center;

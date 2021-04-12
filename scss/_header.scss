@@ -1,7 +1,7 @@
 header {
   display: flex;
   flex-flow: column-reverse;
-  padding: .5em 0em;
+ 
   position: relative;
 
   @media only screen and (min-width: 900px) {
@@ -14,28 +14,59 @@ header {
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
+    margin-top: 0.5em;
+    
+
+
+    @media only screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+  
   }
 
+  .row:nth-of-type(1) {
+    border-bottom: 1px solid rgb(207, 204, 204);
+  }
+  
   .time {
     padding-left: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
   }
 
   .credentials {
-    .credentials__register {
-      padding-right: 0.5em;
+    @media only screen and (max-width: 768px) {
+      .credentials__login {
+        padding-right: 1em;
+        padding-left: 0.3em;
+        border-left: 1px solid black;
+      }
+      
+      .credentials__right {
+        padding-right: 0.3em ;
+      }
     }
 
-    .credentials__login {
-      padding-left: 0.5em;
-      padding-right: 1em;
+    @media only screen and (min-width: 768px) {
+      .credentials__register {
+        padding-right: 0.5em;
+      }
+  
+      .credentials__login {
+        padding-left: 0.5em;
+        padding-right: 1em;
+      }
     }
+
   }
 
   .logo {
 
     &-lg {
       display: none;
+      font-size: 1.7em;
+      letter-spacing: 0.3em;
 
       @media only screen and (min-width: 900px) {
         display: block;
@@ -73,6 +104,8 @@ header {
     display: none;
     z-index: 999;
     
+ 
+    
 
     @media only screen and (min-width: 768px) {
       padding: 2em 6em;
@@ -90,9 +123,13 @@ header {
     }
 
     ul {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.2em;
       align-self: center;
       text-align: center;
-      margin-top: -3.5em;
+      margin-top: -3.5em;     
+      width: 80%;
+      margin: auto;
 
       @media only screen and (min-width: 900px) {
         display: flex;
@@ -100,6 +137,7 @@ header {
         justify-content: space-around;
         align-items: center;
         margin-top: 0;
+
       }
 
       li {
@@ -125,6 +163,7 @@ header {
       a {
         font-size: 2em;
         margin: 0 .25em;
+
       }
 
     }
