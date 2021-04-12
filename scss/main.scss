@@ -16,24 +16,25 @@
   
 
   a {
-    
-    display: block;
-
+    display: block; 
 
     h2 {
       background-color: rgba(255, 255, 255, 0.603);
       padding-top: 0.55em;
       padding-bottom: 0.5em;
-    
-
+      font-family: 'Esteban', serif;
+          
       &::after {
         display: block;
         content: "Ver más";
         background: $detailColor;
-        padding: .75em 1.5em;
+        padding: .75em 1.3em;
         width: 150px;
         margin: auto;
       }
+    }
+    @media only screen and (min-width:768px) {
+      
     }
   }
 }
@@ -81,22 +82,48 @@
     border-bottom: 5px solid $menuColor;
 
 
+
     .article__info {
-      text-align: justify;
+      text-align: left;
       padding-top: 0.5em;
       padding-left: 1em;
       padding-right: 1em;
+
+      .article__span {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight:500;
+        font-size: 1.4em;
+       
+      }
+      
+      .article__title {
+        line-height: 1.4em;
+        font-family: 'Esteban', serif;
+        font-size: 1.7em; 
+  
+      }
+  
+      .article__text {
+        line-height: 1.7em;
+        padding-top: 1em;
+        font-family: 'Esteban, sans';
+        font-size: 1.2em;
+        color: rgb(80, 80, 80);
+       
+        
+      }
+
+      .article__meta {
+        font-family: 'Josefin Sans', sans-serif;
+        padding-bottom: 1em;
+
+        .article__by {
+          font-family: 'Esteban', serif;
+        }
+      }
+
     }
 
-    .article__title {
-      line-height: 1.4em;
-    }
-
-    .article__text {
-      line-height: 1.7em;
-      padding-top: 1em;
-      padding-bottom: 1em;
-    }
 
 
     .article__image {

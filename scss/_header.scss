@@ -50,12 +50,14 @@ header {
 
     @media only screen and (min-width: 768px) {
       .credentials__register {
-        padding-right: 0.5em;
+        padding: 0.5em;
+        border: 1px solid rgb(218, 218, 218);
       }
   
       .credentials__login {
-        padding-left: 0.5em;
-        padding-right: 1em;
+        padding: 0.5em;
+        margin-right: 1em;
+        border: 1px solid rgb(218, 218, 218);
       }
     }
 
@@ -103,6 +105,7 @@ header {
     background: $bgcolor;
     display: none;
     z-index: 999;
+
     
  
     
@@ -124,7 +127,7 @@ header {
 
     ul {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 1.2em;
+      font-size: 1.3em;
       align-self: center;
       text-align: center;
       margin-top: -3.5em;     

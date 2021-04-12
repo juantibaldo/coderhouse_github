@@ -33,18 +33,6 @@ h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h2 {
-  font-family: 'EB Garamond', serif;
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #e1ad7f;
-          text-decoration-color: #e1ad7f;
-}
-
 /*color palette:
 
 dark grey: #5d5c61
@@ -119,11 +107,13 @@ header .time {
 
 @media only screen and (min-width: 768px) {
   header .credentials .credentials__register {
-    padding-right: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #dadada;
   }
   header .credentials .credentials__login {
-    padding-left: 0.5em;
-    padding-right: 1em;
+    padding: 0.5em;
+    margin-right: 1em;
+    border: 1px solid #dadada;
   }
 }
 
@@ -190,7 +180,7 @@ header .menu {
 
 header .menu ul {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -324,13 +314,14 @@ footer .sm div a {
   background-color: rgba(255, 255, 255, 0.603);
   padding-top: 0.55em;
   padding-bottom: 0.5em;
+  font-family: 'Esteban', serif;
 }
 
 .hero a h2::after {
   display: block;
   content: "Ver más";
   background: #e1ad7f;
-  padding: .75em 1.5em;
+  padding: .75em 1.3em;
   width: 150px;
   margin: auto;
 }
@@ -382,20 +373,39 @@ footer .sm div a {
 }
 
 .articles .article .article__info {
-  text-align: justify;
+  text-align: left;
   padding-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.articles .article .article__title {
-  line-height: 1.4em;
+.articles .article .article__info .article__span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
 }
 
-.articles .article .article__text {
+.articles .article .article__info .article__title {
+  line-height: 1.4em;
+  font-family: 'Esteban', serif;
+  font-size: 1.7em;
+}
+
+.articles .article .article__info .article__text {
   line-height: 1.7em;
   padding-top: 1em;
+  font-family: 'Esteban, sans';
+  font-size: 1.2em;
+  color: #505050;
+}
+
+.articles .article .article__info .article__meta {
+  font-family: 'Josefin Sans', sans-serif;
   padding-bottom: 1em;
+}
+
+.articles .article .article__info .article__meta .article__by {
+  font-family: 'Esteban', serif;
 }
 
 .articles .article .article__image {
