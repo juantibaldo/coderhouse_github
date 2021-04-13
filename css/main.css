@@ -52,6 +52,8 @@ header {
   position: -webkit-sticky;
   position: sticky;
   background-color: #fff;
+  -webkit-box-shadow: 0 0 2px 0;
+          box-shadow: 0 0 2px 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -61,6 +63,8 @@ header {
         -ms-flex-flow: column;
             flex-flow: column;
     position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -78,7 +82,7 @@ header .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5em 0;
+  padding: 0.2em 0;
   margin-top: 0.5em;
 }
 
@@ -89,7 +93,15 @@ header .row {
 }
 
 header .row:nth-of-type(1) {
-  border-bottom: 1px solid #cfcccc;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  border-top: 1px solid #cfcccc;
+}
+
+@media only screen and (min-width: 768px) {
+  header .row:nth-of-type(1) {
+    border-bottom: 1px solid #cfcccc;
+  }
 }
 
 header .time {
@@ -133,6 +145,10 @@ header .logo-lg {
   }
 }
 
+header .logo-sm {
+  font-size: 1.2em;
+}
+
 @media only screen and (min-width: 900px) {
   header .logo-sm {
     display: none;
@@ -164,6 +180,12 @@ header .menu {
 @media only screen and (min-width: 768px) {
   header .menu {
     padding: 2em 6em;
+  }
+  header .menu .menu__item {
+    text-decoration: none;
+  }
+  header .menu .menu__item:visited {
+    text-decoration: underline;
   }
 }
 
@@ -281,7 +303,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 1em;
-  margin-top: 4em;
   text-align: center;
 }
 
@@ -296,6 +317,12 @@ footer .sm div {
 footer .sm div a {
   font-size: 1.7em;
   margin: 0 .25em;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    margin-top: 4em;
+  }
 }
 
 /*html, body {
