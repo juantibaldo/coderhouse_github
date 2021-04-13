@@ -77,11 +77,16 @@
 
 
   .article {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     padding-bottom: 2em;
     border-bottom: 5px solid $menuColor;
 
 
+    .article__image {
+      max-width: 100%;
+      padding-bottom: 0.5em;
+      padding-top: 1em;
+    }
 
     .article__info {
       text-align: left;
@@ -89,47 +94,40 @@
       padding-left: 1em;
       padding-right: 1em;
 
-      .article__span {
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight:500;
-        font-size: 1.4em;
-       
-      }
-      
+
       .article__title {
-        line-height: 1.4em;
+        line-height: 1.3em;
         font-family: 'Esteban', serif;
-        font-size: 1.7em; 
-  
+        font-size: 1.8em;
+        
+        .article__span {
+          font-family: 'Big Shoulders Inline Text', sans-serif;
+          font-weight:500;
+          font-size: 1em;       
+        }
+        
       }
   
       .article__text {
-        line-height: 1.7em;
+        line-height: 1.3em;
         padding-top: 1em;
         font-family: 'Esteban, sans';
         font-size: 1.2em;
-        color: rgb(80, 80, 80);
-       
-        
+        color: rgb(80, 80, 80);      
       }
 
       .article__meta {
         font-family: 'Josefin Sans', sans-serif;
+        font-size: 0.9em;
         padding-bottom: 1em;
+        color: rgb(80, 80, 80);
+
 
         .article__by {
           font-family: 'Esteban', serif;
         }
       }
 
-    }
-
-
-
-    .article__image {
-      max-width: 100%;
-      padding-bottom: 0.5em;
-      padding-top: 1em;
     }
   }
 }

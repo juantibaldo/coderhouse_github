@@ -48,15 +48,19 @@ header {
   -webkit-box-direction: reverse;
       -ms-flex-flow: column-reverse;
           flex-flow: column-reverse;
-  position: relative;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #fff;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 768px) {
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+    position: relative;
   }
 }
 
@@ -367,9 +371,15 @@ footer .sm div a {
 }
 
 .articles .article {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding-bottom: 2em;
   border-bottom: 5px solid #f2f2f2;
+}
+
+.articles .article .article__image {
+  max-width: 100%;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
 }
 
 .articles .article .article__info {
@@ -379,20 +389,20 @@ footer .sm div a {
   padding-right: 1em;
 }
 
-.articles .article .article__info .article__span {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 500;
-  font-size: 1.4em;
+.articles .article .article__info .article__title {
+  line-height: 1.3em;
+  font-family: 'Esteban', serif;
+  font-size: 1.8em;
 }
 
-.articles .article .article__info .article__title {
-  line-height: 1.4em;
-  font-family: 'Esteban', serif;
-  font-size: 1.7em;
+.articles .article .article__info .article__title .article__span {
+  font-family: 'Big Shoulders Inline Text', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
 }
 
 .articles .article .article__info .article__text {
-  line-height: 1.7em;
+  line-height: 1.3em;
   padding-top: 1em;
   font-family: 'Esteban, sans';
   font-size: 1.2em;
@@ -401,17 +411,13 @@ footer .sm div a {
 
 .articles .article .article__info .article__meta {
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.9em;
   padding-bottom: 1em;
+  color: #505050;
 }
 
 .articles .article .article__info .article__meta .article__by {
   font-family: 'Esteban', serif;
-}
-
-.articles .article .article__image {
-  max-width: 100%;
-  padding-bottom: 0.5em;
-  padding-top: 1em;
 }
 
 /* Brands */
