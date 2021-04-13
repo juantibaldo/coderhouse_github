@@ -131,13 +131,8 @@ header {
     @media only screen and (min-width: 768px) {
       padding: 2em 6em;
     
-      .menu__item {
-        text-decoration: none;
-      }  
-      
-      .menu__item:visited {
-        text-decoration: underline;
-      }
+
+
     }
 
     @media only screen and (min-width: 900px) {
@@ -166,11 +161,25 @@ header {
         justify-content: space-around;
         align-items: center;
         margin-top: 0;
+        
 
       }
 
       li {
         padding: 1em 0;
+
+        @media only screen and (min-width: 768px) {
+
+          text-decoration: none;
+
+          a.active {
+            text-decoration: underline;
+            text-decoration-thickness: 0.2em;
+  
+          }
+        }
+
+
 
         @media only screen and (min-width: 900px) {
           padding: 0;
@@ -178,6 +187,7 @@ header {
 
         a {
           font-size: 2em;
+ 
 
           @media only screen and (min-width: 900px) {
             font-size: 1em;

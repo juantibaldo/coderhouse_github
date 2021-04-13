@@ -181,12 +181,6 @@ header .menu {
   header .menu {
     padding: 2em 6em;
   }
-  header .menu .menu__item {
-    text-decoration: none;
-  }
-  header .menu .menu__item:visited {
-    text-decoration: underline;
-  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -236,6 +230,16 @@ header .menu ul {
 
 header .menu ul li {
   padding: 1em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  header .menu ul li {
+    text-decoration: none;
+  }
+  header .menu ul li a.active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+  }
 }
 
 @media only screen and (min-width: 900px) {
