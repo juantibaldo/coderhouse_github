@@ -152,6 +152,7 @@
     margin: auto;
     padding: 3em 1em;
     display: block;
+   
   }
 
   .brands__card {
@@ -159,13 +160,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: $itemColor;
+    
     padding: 1rem;
     height: 200px;
     width: 100%;
     max-width: 250px;
-    border: 2px solid $detailColor;
+    border: 2px solid grey;
     margin: auto;
+
+    .patek {
+      margin-top: -2em;
+    }
   }
 
 }
@@ -196,9 +201,30 @@
   }
 
 
+  /* Media Queries */
+
+@media only screen and (max-width: 768px) {
+
+  .hero {
+    width: fit-content;
+  }
+  
+  
+  .form,
+    .form > form,
+    .form > form > .form__input,
+    .form > form > .form__textarea,
+    .form > form > .form__newsletter,
+    .form > form > .form__age {
+      width: 100%;
+    }
+  
+    .form > form > .form__textarea {
+      max-width: 100%;
+    }
+  }
 
 @media only screen and (min-width: 768px) {
-
 
   .row:nth-of-type(2) {
     background: $bgcolor;
@@ -237,20 +263,24 @@
       width: 800px;
     }
 
-    .article__info {
-      padding-right: 20px;
-      border: 1px solid red;
-      
-      max-width: 750px;
+    .article__info { 
+      max-width: 480px;
+      margin: auto;
+      padding: none;
     }
 
     .article__title {
-      font-size: 1.8em;
-      padding-top: 2em;
+      font-size: 2.3em !important;
+
+      
+
+      .article__span {
+        font-size: 1.2em !important;
+      }
     }
 
     .article__text {
-      font-size: 1.1em
+      font-size: 1.3em !important;
     }
   }
 
@@ -387,23 +417,4 @@
 
 
 
-@media only screen and (max-width: 768px) {
-  
-.hero {
-  width: fit-content;
-}
 
-
-.form,
-  .form > form,
-  .form > form > .form__input,
-  .form > form > .form__textarea,
-  .form > form > .form__newsletter,
-  .form > form > .form__age {
-    width: 100%;
-  }
-
-  .form > form > .form__textarea {
-    max-width: 100%;
-  }
-}
