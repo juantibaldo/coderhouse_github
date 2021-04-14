@@ -3,7 +3,7 @@ header {
   flex-flow: column-reverse;
   top: 0;
   position: sticky;
-  background-color: #fff;
+  background-color: $bgColor;
   box-shadow: 0 0 2px 0;
 
 
@@ -35,10 +35,10 @@ header {
   .row:nth-of-type(1) {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
-    border-top: 1px solid rgb(207, 204, 204);
+    border-top: 1px solid $ash;
 
     @media only screen and (min-width: 768px) {
-      border-bottom: 1px solid rgb(207, 204, 204);
+      border-bottom: 1px solid $ash;
     }
     
   }
@@ -54,7 +54,7 @@ header {
       .credentials__login {
         padding-right: 1em;
         padding-left: 0.3em;
-        border-left: 1px solid black;
+        border-left: 1px solid $black;
       }
       
       .credentials__right {
@@ -65,16 +65,25 @@ header {
     @media only screen and (min-width: 768px) {
       .credentials__register {
         padding: 0.5em;
-        border: 1px solid rgb(218, 218, 218);
+        border: 1px solid $ash;       
       }
-  
+
+      .credentials__register:hover {
+        border: 1px solid $black;
+        transition: 0.3s;
+      }
+
       .credentials__login {
         padding: 0.5em;
         margin-right: 1em;
-        border: 1px solid rgb(218, 218, 218);
+        border: 1px solid $ash;
       }
-    }
 
+      .credentials__login:hover {
+        border: 1px solid $black;
+        transition: 0.3s;
+      }
+    }      
   }
 
   .logo {
@@ -84,20 +93,17 @@ header {
       font-size: 1.7em;
       letter-spacing: 0.3em;
 
-
-      @media only screen and (min-width: 900px) {
+      @media only screen and (min-width: 768px) {
         display: block;
       }
 
     }
 
-
-
     &-sm {
 
       font-size: 1.2em;
       
-      @media only screen and (min-width: 900px) {
+      @media only screen and (min-width: 768px) {
         display: none;
       }
     }    
@@ -124,18 +130,7 @@ header {
     display: none;
     z-index: 999;
 
-    
- 
-    
-
     @media only screen and (min-width: 768px) {
-      padding: 2em 6em;
-    
-
-
-    }
-
-    @media only screen and (min-width: 900px) {
       position: relative;
       top: 0;
       left: 0;
@@ -155,7 +150,7 @@ header {
       width: 80%;
       margin: auto;
 
-      @media only screen and (min-width: 900px) {
+      @media only screen and (min-width: 768px) {
         display: flex;
         flex-flow: row;
         justify-content: space-around;
@@ -174,20 +169,19 @@ header {
 
           .active {
             text-decoration: underline;
-            text-decoration-thickness: 0.2em;
-  
+            text-decoration-thickness: 0.2em;  
           }
         }
 
 
-        @media only screen and (min-width: 900px) {
+        @media only screen and (min-width: 768px) {
           padding: 0;
         }
 
         a {
           font-size: 2em; 
 
-          @media only screen and (min-width: 900px) {
+          @media only screen and (min-width: 768px) {
             font-size: 1em;
           }
         }
@@ -200,7 +194,6 @@ header {
       a {
         font-size: 2em;
         margin: 0 .25em;
-
       }
 
     }
@@ -214,7 +207,7 @@ header {
   }
 
   .lg-none {
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 768px) {
       display: none;
     }
   }

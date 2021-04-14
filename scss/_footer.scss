@@ -1,4 +1,5 @@
 footer {
+  font-family: 'Josefin Sans', sans-serif;
   border-top: 2px solid $itemColor;
   display: flex;
   flex-flow: column;
@@ -9,16 +10,27 @@ footer {
   text-align: center;
 
   .sm {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    
 
     div {
       margin-top: .5em;
+
 
       a {
         font-size: 1.7em;
         margin: 0 .25em;
       }
     }
+  }
+
+  .footer__tempo {
+    font-size: 1.3em;
+    padding-bottom: 0.2em;
+  }
+
+  .footer__copy {
+    color: $ash;
   }
 
   @media only screen and (min-width: 768px) {
