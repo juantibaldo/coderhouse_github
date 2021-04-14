@@ -552,7 +552,8 @@ footer .sm div a {
   }
   .article .article__info {
     padding-right: 20px;
-    max-width: 500px;
+    border: 1px solid red;
+    max-width: 750px;
   }
   .article .article__title {
     font-size: 1.8em;
