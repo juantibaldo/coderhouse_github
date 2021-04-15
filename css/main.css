@@ -43,7 +43,7 @@ header {
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-  background-color: #f4f4f3;
+  background-color: #fff;
   -webkit-box-shadow: 0 0 2px 0;
           box-shadow: 0 0 2px 0;
 }
