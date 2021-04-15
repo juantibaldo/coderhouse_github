@@ -7,7 +7,7 @@ header {
   box-shadow: 0 0 2px 0;
 
 
-  
+
 
   @media only screen and (min-width: 768px) {
     flex-flow: column;
@@ -22,14 +22,11 @@ header {
     align-items: center;
     padding: 0.2em 0;
     margin-top: 0.5em;
-    
-    
-
 
     @media only screen and (min-width: 768px) {
       margin-top: 0;
     }
-  
+
   }
 
   .row:nth-of-type(1) {
@@ -40,9 +37,9 @@ header {
     @media only screen and (min-width: 768px) {
       border-bottom: 1px solid $ash;
     }
-    
+
   }
-  
+
   .time {
     padding-left: 1em;
     font-family: 'Josefin Sans', sans-serif;
@@ -56,16 +53,16 @@ header {
         padding-left: 0.3em;
         border-left: 1px solid $black;
       }
-      
+
       .credentials__right {
-        padding-right: 0.3em ;
+        padding-right: 0.3em;
       }
     }
 
     @media only screen and (min-width: 768px) {
       .credentials__register {
         padding: 0.5em;
-        border: 1px solid $ash;       
+        border: 1px solid $ash;
       }
 
       .credentials__register:hover {
@@ -83,7 +80,7 @@ header {
         border: 1px solid $black;
         transition: 0.3s;
       }
-    }      
+    }
   }
 
   .logo {
@@ -102,17 +99,17 @@ header {
     &-sm {
 
       font-size: 1.2em;
-      
+
       @media only screen and (min-width: 768px) {
         display: none;
       }
-    }    
+    }
   }
 
   .logo-sm {
     width: 100%;
     text-align: center;
-    padding-right:32px;
+    padding-right: 32px;
   }
 
   .toggle {
@@ -146,7 +143,7 @@ header {
       font-size: 1.3em;
       align-self: center;
       text-align: center;
-      margin-top: -3.5em;     
+      margin-top: -3.5em;
       width: 80%;
       margin: auto;
 
@@ -156,7 +153,7 @@ header {
         justify-content: space-around;
         align-items: center;
         margin-top: 0;
-        
+
 
       }
 
@@ -169,7 +166,7 @@ header {
 
           .active {
             text-decoration: underline;
-            text-decoration-thickness: 0.2em;  
+            text-decoration-thickness: 0.2em;
           }
         }
 
@@ -179,7 +176,7 @@ header {
         }
 
         a {
-          font-size: 2em; 
+          font-size: 2em;
 
           @media only screen and (min-width: 768px) {
             font-size: 1em;

@@ -6,12 +6,15 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-
   text-align: center;
+  margin-top: 1em;
 
   .sm {
     margin-bottom: 0.5em;
-    
+
+    p {
+      color: $ash;
+    }
 
     div {
       margin-top: .5em;

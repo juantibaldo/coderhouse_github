@@ -87,12 +87,12 @@ header .row {
 header .row:nth-of-type(1) {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
-  border-top: 1px solid #bababa;
+  border-top: 1px solid #a1a1a1;
 }
 
 @media only screen and (min-width: 768px) {
   header .row:nth-of-type(1) {
-    border-bottom: 1px solid #bababa;
+    border-bottom: 1px solid #a1a1a1;
   }
 }
 
@@ -116,7 +116,7 @@ header .time {
 @media only screen and (min-width: 768px) {
   header .credentials .credentials__register {
     padding: 0.5em;
-    border: 1px solid #bababa;
+    border: 1px solid #a1a1a1;
   }
   header .credentials .credentials__register:hover {
     border: 1px solid #000000;
@@ -126,7 +126,7 @@ header .time {
   header .credentials .credentials__login {
     padding: 0.5em;
     margin-right: 1em;
-    border: 1px solid #bababa;
+    border: 1px solid #a1a1a1;
   }
   header .credentials .credentials__login:hover {
     border: 1px solid #000000;
@@ -305,10 +305,15 @@ footer {
           align-items: center;
   padding: 1em;
   text-align: center;
+  margin-top: 1em;
 }
 
 footer .sm {
   margin-bottom: 0.5em;
+}
+
+footer .sm p {
+  color: #a1a1a1;
 }
 
 footer .sm div {
@@ -326,7 +331,7 @@ footer .footer__tempo {
 }
 
 footer .footer__copy {
-  color: #bababa;
+  color: #a1a1a1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -352,22 +357,25 @@ footer .footer__copy {
 }
 
 .hero a h2 {
-  background-color: rgba(255, 255, 255, 0.603);
-  padding-top: 0.55em;
-  padding-bottom: 0.5em;
+  background-color: #dedcdec5;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
   font-family: 'Esteban', serif;
 }
 
 .hero a h2::after {
   display: block;
   content: "Ver más";
-  padding: .75em 1.3em;
+  padding: .75em 0.75em;
   width: 150px;
   margin: auto;
+  margin-top: 0.5em;
+  background-color: #e1ad7f;
+  border-radius: 10%;
 }
 
 .home-button {
-  background-color: #e2e2e2;
+  background-color: #dcd3c9;
   border: none;
   margin: auto;
   padding: 15px 32px;
@@ -385,7 +393,7 @@ footer .footer__copy {
 }
 
 .home-button:hover {
-  background: #e1ad7f;
+  background: #94a8b3;
   -webkit-transition: 0.15s;
   transition: 0.15s;
 }
@@ -408,7 +416,7 @@ footer .footer__copy {
 .articles .article {
   margin-bottom: 1em;
   padding-bottom: 1em;
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 2px solid #dedcde;
 }
 
 .articles .article .article__image {
@@ -493,7 +501,7 @@ footer .footer__copy {
   height: 200px;
   width: 100%;
   max-width: 250px;
-  border: 2px solid grey;
+  border: 2px solid #a1a1a1;
   margin: auto;
 }
 
@@ -513,6 +521,13 @@ footer .footer__copy {
 }
 
 .about__text .about__text--one {
+  padding-bottom: 1em;
+}
+
+/* Contact */
+h2 {
+  font-family: 'Esteban', serif;
+  padding-top: 1em;
   padding-bottom: 1em;
 }
 
@@ -544,7 +559,7 @@ footer .footer__copy {
 }
 
 .form .form__age {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875em;
   width: 500px;
   height: 50px;
@@ -572,7 +587,7 @@ footer .footer__copy {
   background: transparent;
   outline: none;
   color: #726659;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875em;
   resize: none;
   border: solid 1px #b3aca7;
@@ -587,7 +602,7 @@ footer .footer__copy {
 }
 
 .form .form__newsletter {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875em;
   width: 500px;
   height: 50px;
@@ -606,7 +621,7 @@ footer .footer__copy {
   width: 500px;
   padding: 0;
   margin: -5px 0px 0px 0px;
-  font-family: 'lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875em;
   color: #b3aca7;
   border: solid 1px #b3aca7;
@@ -638,12 +653,6 @@ footer .footer__copy {
 }
 
 @media only screen and (min-width: 768px) {
-  .row:nth-of-type(2) {
-    background: #fff;
-  }
-  .row:nth-of-type(1) {
-    background: #fff;
-  }
   .article__title--big {
     text-align: center;
   }
@@ -651,6 +660,10 @@ footer .footer__copy {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .hero a h2 {
+    padding: 1em;
+    font-size: 2em;
   }
   /* Articles */
   .articles {
@@ -701,7 +714,7 @@ footer .footer__copy {
     margin: auto;
   }
   .form .form__input {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.875em;
     width: 500px;
     height: 50px;
@@ -720,7 +733,7 @@ footer .footer__copy {
     border-top: none;
   }
   .form .form__age {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.875em;
     width: 500px;
     height: 50px;
@@ -746,7 +759,7 @@ footer .footer__copy {
     background: transparent;
     outline: none;
     color: #726659;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.875em;
     resize: none;
     border: solid 1px #b3aca7;
@@ -759,7 +772,7 @@ footer .footer__copy {
     color: #e2dedb;
   }
   .form .form__newsletter {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.875em;
     width: 500px;
     height: 50px;
@@ -777,7 +790,7 @@ footer .footer__copy {
     width: 500px;
     padding: 0;
     margin: -5px 0px 0px 0px;
-    font-family: 'lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.875em;
     color: #b3aca7;
     border: solid 1px #b3aca7;
